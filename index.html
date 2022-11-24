@@ -1,89 +1,131 @@
 안녕하세요A.I.와 파이썬을 공부 하면서 여러가지를 적어놓기위해 만들어놓은 깃 페이지입니다.
-
+<br>
 https://docs.python.org/3/
-
+<br>
 while문에서
+<br>
 break는 아예 루프를 빠져 나오는 것이고, continue는 하나만 건너 뛰고 선두로 돌아 루프를 계속 실행합니다.
-
-
+<br>
+<br>
 파이썬 예약어 정리
-
-True	
+<br>
+True
+<br>
 참/거짓을 표현하기 위한 자료형 부울(Boolean, Bool)에는 True, False 딱 2가지의 값만 존재한다.
-
+<br>
 파이썬에서 숫자 0은 False, 0을 제외한 모든 정수는 True를 의미한다.
-
+<br>
 False
-None	
+<br>
+None
+<br>
 값이 없거나 알 수 없음(absence of a value or a null value)을 의미한다.
-
+<br>
 NoneType이라는 자료형에 존재한다.
-
+<br>
 and	둘 다 True면 True,
-
+<br>
 둘 중 하나라도 False가 있으면 False
-
+<br>
 둘 다 False면 False
+<br>
 as	모듈 이름 다음에 as 가 올 경우, as 다음의 이름을 임포트한 모듈에 직접 연결한다.
+<br>
 assert	프로그램에 디버깅 어서션(debugging assertion)을 삽입하는 편리한 방법이다.
+<br>
 break	반복문(while 문 또는 for 문)에서 빠져나올때 쓰는 예약어. 조건이 참이면 반복문 중단.
+<br>
 class	클래스를 정의할 때 쓰는 예약어
+<br>
 continue	조건이 참이면 반복문이 계속
+<br>
 def	함수를 정의할 때 쓰는 예약어
+<br>
 del	인덱스를 사용하여 항목을 삭제하는 예약어
+<br>
 elif	else if의 줄임말. 조건이 거짓이면 elif문이 실행된다. 조건을 여러개 걸고 싶을 때 사용하는 예약어
+<br>
 else	if문에서 조건이 거짓이면 else로 넘어가 다음 명령이 실행된다. elif는 여러 개 쓸 수 있으나 else는 하나만 쓸 수 있다.
+<br>
 except	오류에 대한 예외 처리 관련 예약어. 
+<br>
 finally	오류에 대한 예외 처리 관련 예약어
+<br>
 for	반복문 예약어
+<br>
 from	현재 네임스페이스(namespace)로 특정 모듈 중 일부(specific attributes or functions)를 가져온다
+<br>
 global	변수 범위(scope) 관련 예약어
+<br>
 if	조건문 예약어
+<br>
 import	현재 네임스페이스(namespace)로 특정 모듈 전체를 가져오는 예약어
+<br>
 in	시퀀스 자료형(리스트, 튜플, 문자열 등) 안에 어떤 값이 들어있는지 여부를 확인하는 예약어
+<br>
 is	두 값의 참조(레퍼런스, 포인터)를 비교하는 연산자.
-
+<br>
 ==는 값을 비교하는 연산자로 is와 다르다.
+<br>
 lambda	익명 함수를 만드는 연산자. 
+<br>
 nonlocal	변수 범위(scope) 관련 예약어
+<br>
 not	True, False의 반대값을 출력하는 예약어
-
+<br>
 (예: >>> not False 의 결과값은 True)
+<br>
 or	둘 다 True면 True
-
+<br>
 둘 중 하나라도 True가 있으면 True
-
+<br>
 둘 다 False면 False
+<br>
 pass	어떤 조건문 밑에 pass를 쓰면 그 조건을 실행하지 않고 다음 명령을 실행한다
+<br>
 raise	파이썬에서 기본적으로 뜨는 오류 외에 프로그래머가 오류 상황을 직접 정의하여 예외를 발생시켜야 할 때 사용하는 예약어
+<br>
 return	함수 안에서 사용되어 값을 반환하고 함수문을 빠져나오는 예약어
+<br>
 try	오류에 대한 예외 처리 관련 예약어
+<br>
 while	반복문 예약어. 
+<br>
 with	예외문 관련, _enter_ 및 _exit_와 함께 쓰이는 예약어
+<br>
 yield	함수 안에서 사용되어 return과 비슷한 역할을 하는 예약어. 그러나 yield는 gernerator를 반환한다는 점에서 차이가 있다.
-
+<br>
 식별자 뒤에 괄호()가 있으면 해당 식별자를 함수라고 부른다.
+<br>
 함수를 쓰는 이유는 프로그래밍 자체가 반복적으로 사용되는 코드를 자주 쓰는데
+<br>
 매번 동일한 코드를 반복해서 쓰는 것보다 함수로 한 번 정의하고 계속 사용하는 것이 효율적이기 때문이다.
+<br>
 함수 괄호 내부에 들어가는 것이 매개변수(parameter),
+<br>
 함수를 호출 할 때 넣는 값을 인수(argumen),
+<br>
 함수의 결과값을 리턴값(return)이라고 한다.
-
+<br>
 예시===========================
-\n
+<br>
 def add(a, b): # a, b는 매개변수
-    return a + b
-
+<br>
+return a + b
+<br>
 add(1, 3)  # 1, 3는 인수
-\n
+<br>
 ===============================
-
+<br>
 매개변수는 함수에 이미 입력되어 있고, 앞으로 전달될 값을 받는 변수를 의미하고
+<br>
 인수는 함수를 호출할 때 전달하는 입력값을 의미한다.
-
-
+<br>
+<br>
 함수의 종류를 살펴 보다 보면 입력값이나 결과값이 있거나 없는 함수가 있다.
-
+<br>
 입력이 필요 없을 경우는 입력값에 상관 없이 결과 값이 정해져 있다거나 한 경우일테고,
+<br>
 결과 값의 경우 대입만이 필요한 상황이 거나 결과 값이 필요 없는 상황일 것이다.
+<br>
 위와같은 두 경우뿐만이 아니라 수없이 많은 경우가 있겠지만 말이다.
