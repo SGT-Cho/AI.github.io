@@ -1,0 +1,8 @@
+numbers = '010-12345-23456'
+def change_num(nums):
+    answer = numbers.replace(numbers[-5:], '#####')
+    return answer
+change_num(numbers)
+
+
+#전화번호 가려주는 프로그램, 노드 10-2: 프로젝트 1번 코드 입니다.
