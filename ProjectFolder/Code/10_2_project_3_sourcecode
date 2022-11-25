@@ -1,0 +1,14 @@
+def mul(*values):
+    output = 1
+    for num in values:
+        if num <= 10:
+            if num %1 ==0:    #위에서 사용한 정수 확인용 과정 영상에는 없었지만 추가하였음
+                output *= num
+            else:
+                pass
+        else:
+            pass
+    return output
+            
+mul(2, 3, 4, 5) #결과 확인용
+
