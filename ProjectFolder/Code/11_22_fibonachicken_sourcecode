@@ -1,0 +1,16 @@
+#n>=3, f(1)=f(2)=1
+def FibonaChicken(n):
+    if n == 1 or n==2:
+        number =1
+    elif n >2 and (n%1) ==0 :
+        number=FibonaChicken(n-1)+FibonaChicken(n-2)
+    else:
+        return 0
+
+    return number
+
+
+print(FibonaChicken(1))     #1
+print(FibonaChicken(7))     #13
+print(FibonaChicken(0))     #0(오류, 제대로된 자연수 n 값을 입력하지 않았기 때문)
+print(FibonaChicken(1.5))   #0(오류, 제대로된 자연수 n 값을 입력하지 않았기 때문)
